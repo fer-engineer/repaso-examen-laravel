@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id('codigo');
             // clave foranea 'cliente' que se refiere con la clave primaria ,
             // 'codigo' en la tabla clientes
-            $table->foreignId('cliente')->constrained('clientes','codigo');  
+            $table->foreignId('cliente_id')->constrained('clientes','codigo');  
             $table->date('fecha');
             $table->decimal('total',8,2);
             $table->timestamps();
